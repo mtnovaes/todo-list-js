@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;               
+    background-color: #111;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+p{
+    font:bold;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.container-todolist {
+    height: 600px;
+    width: 800px;
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.container-items {
+    width: 100%; 
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    gap: 8px;
+    margin: 2rem 0;
+}
+
+.input-task {
+    border-radius: 6px;
+    flex: 1; 
+    padding: 8px;
+}
+
+.btn-add {
+    padding: 12px;
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container-items ul {
+    width: 80%;           
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;     
+    display: flex;
+    flex: auto;
+    gap: 8px;             
+}
+
+li {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 12px 0 8px 0;
+    text-align: left;
+    gap: 6px    ;
+    width: 100%;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    padding: 12px 12px; 
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.edit{
+     padding: 12px 12px; 
+    background-color: white;
+    color: gray;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}
